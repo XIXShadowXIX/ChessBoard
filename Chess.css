@@ -1,0 +1,21 @@
+td,tr{
+    border:0.1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+table{
+    border: 10px solid rgb(132, 69, 3);
+    width: 812px;
+    height: 812px;
+    background-color: black;
+    border-radius: 20px;
+}
+.chess-board{
+    font-size: xxx-large;
+    font-style: oblique;
+    font-family:sans-serif;
+    text-transform: uppercase;
+}
+td:hover{
+    transition: 0.05s;
+    transform: scale(1.15,1.15);
+}

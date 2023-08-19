@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <link rel="stylesheet" href="/Chess.css">
+    <style>
+        body{
+            background-image: url("/Images/war.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
+            .chess-board {
+                position: absolute;
+                top: 50%;
+                left: 12%;
+                transform: translate(-50%, -50%);
+                font-size: 40px;
+                font-weight: 800;
+                letter-spacing: 4px;
+            }
+             .chess-discription {
+                color:blanchedalmond;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                left: 87%;
+                top: 50%;
+                font-size: 12.5px;
+                text-align: justify;
+                border:1px solid rgba(0, 0, 0, 0);
+                border-radius: 20px;
+                width:250px;
+                text-indent: 20px;
+                background-color: rgba(245, 245, 220, 0.202);
+                padding: 10px;
+            }
+      
+            .chess-board span {
+                animation: animate 3s linear infinite;
+            }
+      
+            .chess-board span:nth-child(1) {
+                animation-delay: 0s;
+            }
+      
+            .chess-board span:nth-child(2) {
+                animation-delay: 0.1s;
+            }
+      
+            .chess-board span:nth-child(3) {
+                animation-delay: 0.2s;
+            }
+      
+            .chess-board span:nth-child(4) {
+                animation-delay: 0.3s;
+            }
+      
+            .chess-board span:nth-child(5) {
+                animation-delay: 0.4s;
+            }
+      
+            .chess-board span:nth-child(6) {
+                animation-delay: 0s;
+            }
+      
+            .chess-board span:nth-child(7) {
+                animation-delay: 0.1s;
+            }
+      
+            .chess-board span:nth-child(8) {
+                animation-delay: 0.2s;
+            }
+      
+            .chess-board span:nth-child(9) {
+                animation-delay: 0.3s;
+            }
+      
+            .chess-board span:nth-child(10) {
+                animation-delay: 0.4s;
+            }
+            @keyframes animate {
+                0% {
+                    filter: blur(0);
+                }
+      
+                40% {
+                    filter: blur(20px);
+                }
+      
+                80% {
+                    filter: blur(0);
+                }
+      
+                100% {
+                    filter: blur(0);
+                }
+            }
+    </style>
+   </head>
+<body> 
+    <div class="chess-board">
+        <span style="color:brown;">C</span>
+        <span style="color:brown;">h</span>
+        <span style="color:brown;">e</span>
+        <span style="color:brown;">s</span>
+        <span style="color:brown;">s</span>
+        <br>
+        <span style="color:blanchedalmond;">B</span>
+        <span style="color:blanchedalmond;">o</span>
+        <span style="color:blanchedalmond;">a</span>
+        <span style="color:blanchedalmond;">r</span>
+        <span style="color:blanchedalmond;">d</span>
+    </div>
+    <div class="chess-discription">
+        <h1 style="color:blanchedalmond; text-align:center;">Discription</h1>
+        <h3>Chess, one of the oldest and most popular board games, played by two opponents on a checkered board with specially designed pieces of contrasting colours, commonly white and black. White moves first, after which the players alternate turns in accordance with fixed rules, each player attempting to force the opponent’s principal piece, the King, into checkmate—a position where it is unable to avoid capture.</h3>
+        <h3>Chess first appeared in India about the 6th century AD and by the 10th century had spread from Asia to the Middle East and Europe. Since at least the 15th century, chess has been known as the “royal game” because of its popularity among the nobility. Rules and set design slowly evolved until both reached today’s standard in the early 19th century. Once an intellectual diversion favoured by the upper classes, chess went through an explosive growth in interest during the 20th century as professional and state-sponsored players competed for an officially recognized world championship title and increasingly lucrative tournament prizes. Organized chess tournaments, postal correspondence games, and Internet chess now attract men, women, and children around the world.</h3>
+    </div> 
+    <table style="margin:auto;">
+        <tbody>
+        <tr>
+            <th></th>
+            <th style="color: brown; font-size:xx-large;">a</th>
+            <th style="color:blanchedalmond; font-size:xx-large;">b</th>
+            <th style="color: brown; font-size:xx-large;">c</th>
+            <th style="color:blanchedalmond; font-size:xx-large;">d</th>
+            <th style="color: brown; font-size:xx-large;">e</th>
+            <th style="color:blanchedalmond; font-size:xx-large;">f</th>
+            <th style="color: brown; font-size:xx-large;">g</th>
+            <th style="color:blanchedalmond; font-size:xx-large;">h</th>
+        </tr>
+        <tr>
+            <th style="color:blanchedalmond; font-size:xx-large;">8</th>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9820;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9822;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9821;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9819;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9818;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9821;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9822;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9820;</td>
+        </tr>
+        <tr>
+            <th style="color: brown; font-size:xx-large;">7</th> 
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9817;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9817;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9817;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9817;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9817;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9817;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9817;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:brown; -webkit-text-stroke: 1px black; ">&#9817;</td>
+        </tr>
+        <tr>
+            <th style="color:blanchedalmond; font-size:xx-large;">6</th>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+        </tr>
+        <tr>
+            <th style="color: brown; font-size:xx-large;">5</th>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+        </tr>
+        <tr>
+            <th style="color:blanchedalmond; font-size:xx-large;">4</th>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+        </tr>
+        <tr>
+            <th style="color: brown; font-size:xx-large;">3</th>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px;"></td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px;"></td>
+        </tr>
+        <tr>
+            <th style="color:blanchedalmond; font-size:xx-large;">2</th>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9817;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9817;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9817;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9817;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9817;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9817;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9817;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9817;</td>
+        </tr>
+        <tr>
+            <th style="color: brown; font-size:xx-large;">1</th>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9820;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9822;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9821;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9819;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9818;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9821;</td>
+            <td style="background-image:url(/Images/black-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9822;</td>
+            <td style="background-image:url(/Images/white-marble.jpg) ; width:80px; height:80px; text-align:center; font-size:70px; color:blanchedalmond; -webkit-text-stroke: 1px brown; ">&#9820;</td>
+        </tr>
+        </tbody>     
+    </table>
+</body>
+</html>
